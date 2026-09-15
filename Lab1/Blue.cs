@@ -7,7 +7,8 @@
             bool answer = false;
 
             // code here
-
+            if (a * b > 0) answer = true;
+            else answer = false;
             // end
 
             return answer;
@@ -27,7 +28,9 @@
             bool answer = false;
 
             // code here
-
+            if (b == 0) answer = false;
+            else if (a % b == 0) answer = true;
+            else answer = false;
             // end
 
             return answer;
@@ -37,7 +40,12 @@
             double answer = 0;
 
             // code here
-
+            double d1 = Math.Abs(d);
+            double f1 = Math.Abs(f);
+            double g1 = Math.Abs(g);
+            if (d1 > f1 && d1 > g1) answer = d;
+            if (f1 > g1 && f1 > d1) answer = f;
+            if (g1 > f1 && g1 > d1) answer = g;
             // end
 
             return answer;
@@ -47,7 +55,9 @@
             double answer = 0;
 
             // code here
-
+            if (x <= -1) answer = 0;
+            if (-1 < x && x <= 0) answer = x + 1;
+            if (x > 0) answer = 1;
             // end
 
             return answer;
