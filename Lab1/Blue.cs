@@ -1,4 +1,4 @@
-﻿namespace Lab1
+namespace Lab1
 {
     public class Blue
     {
@@ -7,8 +7,14 @@
             bool answer = false;
 
             // code here
-            if (a * b > 0) answer = true;
-            else answer = false;
+            if (a * b > 0)
+            {
+                answer = true;
+            }
+            else
+            {
+                answer = false;
+            }
             // end
 
             return answer;
@@ -16,12 +22,20 @@
         public bool Task2(double d)
         {
             bool answer = false;
-
             // code here
+            double a = 0.0001;
+            int n = (int)d;
+            if (Math.Abs(d - n) > a)
+            {
+                answer = true;
+            }
+            else
+            {
+                answer = false;
+            }
+                // end
 
-            // end
-
-            return answer;
+                return answer;
         }
         public bool Task3(int a, int b)
         {
@@ -78,7 +92,7 @@
             int answer = 0;
 
             // code here
-
+            if (Math.Abs(d) < Math.Abs(f))
             // end
 
             return answer;
