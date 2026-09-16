@@ -42,9 +42,18 @@ namespace Lab1
             bool answer = false;
 
             // code here
-            if (b == 0) answer = false;
-            else if (a % b == 0) answer = true;
-            else answer = false;
+            if (b == 0)
+            {
+                answer = false;
+            }
+            else if (a % b == 0)
+            {
+                answer = true;
+            }
+            else 
+            { 
+                answer = false;
+            }
             // end
 
             return answer;
@@ -57,9 +66,18 @@ namespace Lab1
             double d1 = Math.Abs(d);
             double f1 = Math.Abs(f);
             double g1 = Math.Abs(g);
-            if (d1 > f1 && d1 > g1) answer = d;
-            if (f1 > g1 && f1 > d1) answer = f;
-            if (g1 > f1 && g1 > d1) answer = g;
+            if (d1 > f1 && d1 > g1) 
+            {
+                answer = d; 
+            }
+            if (f1 > g1 && f1 > d1) 
+            { 
+                answer = f;
+            }
+            if (g1 > f1 && g1 > d1) 
+            {
+                answer = g; 
+            }
             // end
 
             return answer;
@@ -69,9 +87,18 @@ namespace Lab1
             double answer = 0;
 
             // code here
-            if (x <= -1) answer = 0;
-            if (-1 < x && x <= 0) answer = x + 1;
-            if (x > 0) answer = 1;
+            if (x <= -1) 
+            { 
+                answer = 0;
+            }
+            if (-1 < x && x <= 0)
+            { 
+                answer = x + 1; 
+            }
+            if (x > 0) 
+            {
+                answer = 1;
+            }
             // end
 
             return answer;
@@ -81,7 +108,16 @@ namespace Lab1
             bool answer = false;
 
             // code here
-
+            double r = 2 * Math.Sqrt((circleS / (Math.PI)));
+            double r1 = Math.Sqrt((squareS));
+            if (r <= r1)
+            {
+                answer = true;
+            }
+            else
+            {
+                answer = false;
+            }
             // end
 
             return answer;
@@ -93,6 +129,19 @@ namespace Lab1
 
             // code here
             if (Math.Abs(d) < Math.Abs(f))
+            {
+                if (d > 0)
+                {
+                    answer = -1;
+                }
+            }
+            else
+            {
+                if (f > 0)
+                {
+                    answer = 1;
+                }
+            }
             // end
 
             return answer;
@@ -102,7 +151,13 @@ namespace Lab1
             bool answer = false;
 
             // code here
-            
+            double a1 = (a / 2);
+            double b1 = (b / 2);
+            double c1 = (c / 2);
+            double a2 = Math.Floor(a1/2);
+            double b2 = Math.Floor(b1);
+            double c2 = Math.Floor(c1);
+
             // end
 
             return answer;
